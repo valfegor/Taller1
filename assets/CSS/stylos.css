@@ -235,3 +235,107 @@ section{
 background-color : var(--rojo);
 color: #fff;
 }
+
+.libro{
+    background-color:#e2e2e2;
+
+}
+
+.libro .cajacontenedor {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
+.libro .cajacontenedor .caja {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position:relative;
+    margin-bottom: 15px;
+}
+
+.libro .cajacontenedor .caja .cartaimg {
+    width:100%;
+    height:300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius:5px 5px 0 0;
+
+}
+
+.libro .cajacontenedor .caja .cartaimg:after {
+width:100%;
+height:100%;
+background-position: center;
+background-size:cover;
+content:"";
+position: absolute;
+left:0;
+top: 0;
+filter:grayscale(100%);
+transition:0.4s;
+}
+
+.libro .cajacontenedor .caja:nth-child(1) .cartaimg ,
+.libro .cajacontenedor .caja:nth-child(1) .cartaimg:after {
+    background-image: url("/assets/Imagenes/Aqui.jpg");
+}
+.libro .cajacontenedor .caja:nth-child(2) .cartaimg ,
+.libro .cajacontenedor .caja:nth-child(2) .cartaimg:after {
+    background-image: url("/assets/Imagenes/Akash.jpg");
+}
+.libro .cajacontenedor .caja:nth-child(3) .cartaimg ,
+.libro .cajacontenedor .caja:nth-child(3) .cartaimg:after {
+    background-image: url("/assets/Imagenes/here.jpg");
+}
+.libro .cajacontenedor .caja:nth-child(4) .cartaimg ,
+.libro .cajacontenedor .caja:nth-child(4) .cartaimg:after {
+    background-image: url("/assets/Imagenes/otro.jpg");
+}
+
+.libro .cajacontenedor .caja:hover .cartaimg:after {
+
+    top: 100%;
+    transition:0.4s;
+}
+
+.libro .cajacontenedor .caja .titulo {
+    font-size:16px;
+    margin-top: 15px;
+    font-weight:600;
+    color: #444;
+
+}
+
+.libro .cajacontenedor .caja .ediciontitulo {
+    font-size:13px;
+    font-weight: 600;
+    color: #444;
+    margin-top:10px;
+
+}
+
+
+.libro .cajacontenedor .caja .ediciontitulo span {
+    color:var(--color);
+}
+
+
+.libro .cajacontenedor .caja button {
+
+    position: absolute;
+    left:50%;
+    background-color: var(--rojo);
+    transform: translate(-50%,);
+    bottom:-15px;
+    border-radius: 60px;
+    padding:7px 15px ;
+    outline:none;
+    cursor: pointer;
+
+}
