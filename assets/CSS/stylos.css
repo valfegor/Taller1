@@ -1,0 +1,237 @@
+/*
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+button,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --rojo:#e43a47;
+    --gris:#efefef;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+.contenedor {
+    width: 1140px;
+    margin:auto;
+
+}
+
+header{
+    width:100%;
+    background-color: rgba(0,0,0,0.2);
+    position:   fixed;
+    z-index: 2;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contenedor .logo {
+    padding: 15px 0;
+    height: 75px;
+}
+
+header .contenedor .logo img {
+    height: 100%;
+}
+
+
+header nav ul {
+list-style-type: none;
+}
+
+header nav ul li {
+    display:inline-block;
+}
+
+header nav ul li a {
+display: inline-block;
+height: 75px;
+line-height: 75px;
+padding: 0 15px;
+text-decoration: none;
+text-transform: capitalize;
+font-size: 16px;
+color: #ffff;
+}
+
+header nav ul li a:hover {
+    background-color:var(--rojo);
+
+}
+
+
+.banner {
+    min-height: 100vh;
+    width:100%;
+    background-image: url(/assets/Imagenes/garcia_marquez_cronica.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.banner h1 {
+    margin-top: 230px;
+    display:inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100
+}
+
+.banner h1 span {
+    background-color : var(--rojo);
+    display:inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner2 p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.banner2 button {
+    background-color : var(--rojo);
+    border:0;
+    outline:none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+
+}
+
+.contenedor2 {
+    width: 1140px;
+    margin:auto;
+
+}
+
+.titulo {
+    width:300px;
+    border-bottom: 3px solid var(--rojo);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position:relative;
+    padding:10px 0;
+    text-transform: uppercase;
+
+}
+
+.titulo::after {
+display: inline-block;
+content: "";
+height: 15px;
+width: 15px;
+background-color: var(--rojo);
+position : absolute;
+left : calc(50% - 10px);
+top: calc(75% - 7px);
+transform : rotate(45deg) translate(50% , 50%);
+border: 3px solid #fff;
+
+
+}
+
+section{
+    padding:100px 0;
+    position:relative;
+
+}
+
+#sobre .cartas {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+#sobre .cartas > div{
+    width : 350px;
+    background-color: var(--gris);
+    word-wrap: break-word;
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 5px;
+    height: 215px;
+    border : 1px solid #ccc;
+    transition:0.4s;
+}
+
+#sobre .cartas > div .titulito {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+#sobre .cartas > div p{
+    font-size: 14px;
+    margin-top: 15px;
+
+}
+
+#sobre .cartas > div:hover{
+    width:400px;
+    margin-top: -20px;
+    border-color: var(--rojo);
+    padding: 55px;
+    height:auto;
+
+}
+#sobre .cartas > div button {
+    border: 1px solid var(--rojo);
+    outline:none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+
+#sobre .cartas > div:hover button {
+background-color : var(--rojo);
+color: #fff;
+}
